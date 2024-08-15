@@ -1,5 +1,5 @@
-# Task-2
-CodTech It Solutions
+# CodTech It Solutions Task-2
+
 1. Project Title:
 Sentiment Analysis with Natural Language Processing
 
