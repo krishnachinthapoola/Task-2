@@ -1,0 +1,52 @@
+# Importing libraries
+import pandas as pd
+import numpy as np
+import nltk
+from nltk.corpus import movie_reviews
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import accuracy_score, classification_report
+
+# Downloading necessary NLTK data
+nltk.download('movie_reviews')
+
+# Loading the dataset
+def load_movie_reviews():
+    documents = [(list(movie_reviews.words(fileid)), category)
+                 for category in movie_reviews.categories()
+                 for fileid in movie_reviews.fileids(category)]
+    return documents
+
+documents = load_movie_reviews()
+
+# Preprocessing the data
+def preprocess_data(documents):
+    texts = [' '.join(doc) for doc, _ in documents]
+    labels = [label for _, label in documents]
+    return texts, labels
+
+texts, labels = preprocess_data(documents)
+
+# Vectorizing the text data
+vectorizer = CountVectorizer(stop_words='english')
+X = vectorizer.fit_transform(texts)
+y = np.array(labels)
+
+# Splitting the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+
+# Training the model
+model = MultinomialNB()
+model.fit(X_train, y_train)
+
+# Making predictions
+y_pred = model.predict(X_test)
+
+# Evaluating the model
+accuracy = accuracy_score(y_test, y_pred)
+report = classification_report(y_test, y_pred)
+
+# Output results
+print(f"Accuracy: {accuracy:.2f}")
+print("Classification Report:\n", report)
