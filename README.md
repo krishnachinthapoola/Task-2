@@ -7,7 +7,7 @@ Name: Vamshi Krishna Chinthapoola, Company: CODTECH IT SOLUTIONS, ID: CT08DS5183
 Sentiment Analysis with Natural Language Processing
 
 2. Overview of the Project:
-In this project, I delved into Natural Language Processing (NLP) to help computers understand and analyze human language. The focus was on sentiment analysis, where I aimed to determine if the sentiment in text data—such as reviews or social media posts—is positive, negative, or neutral. This project demonstrates how NLP techniques can be used to extract valuable insights from text.
+In this project, I delved into Natural Language Processing (NLP) to help computers understand and analyze human language. The focus was on sentiment analysis, where I aimed to determine if the sentiment in text data — such as reviews or social media posts — is positive, negative, or neutral. This project demonstrates how NLP techniques can be used to extract valuable insights from text.
 
 3. Objective:
 The main goal was to create a sentiment analysis model capable of classifying text into various sentiment categories. I applied NLP methods to accurately analyze and predict the sentiment in text data. This involved preprocessing the text, training a machine learning model, and evaluating its effectiveness.
