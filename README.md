@@ -1,4 +1,7 @@
 # CodTech It Solutions Task-2
+Name: Vamshi Krishna Chinthapoola, Company: CODTECH IT SOLUTIONS, ID: CT08DS5183, Domain: Artificial Intelligence, Duration: July to August 2024.
+
+## Overview of the Project
 
 1. Project Title:
 Sentiment Analysis with Natural Language Processing
@@ -28,5 +31,5 @@ Jupyter Notebook/Google Colab: For coding and testing in an interactive environm
 6. What I Gained and Learned from This Project:
 Working on this NLP project gave me hands-on experience in processing and analyzing text data. I learned how to preprocess text, extract features, and build a sentiment analysis model. This project deepened my understanding of NLP techniques and how they can be applied to real-world problems, enhancing my skills in text analysis and machine learning.
 
-Output:
+### Output:
 ![Screenshot 2024-08-15 235706](https://github.com/user-attachments/assets/907bd378-8121-41fd-a079-e1a269417a22)
